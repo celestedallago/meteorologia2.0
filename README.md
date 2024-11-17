@@ -34,10 +34,26 @@ estaciones meteorologicas deberas seguir los siguientes pasos:
 
 ## Funciones
 
-## Example
+1)  **`fahrenheit_a_centigrados`**: Esta funcion devuelve la temperatura
+    ingresada en grados fahrenheit a grados centigrados
+
+## Ejemplo
 
 Este es un ejemplo basico de como instalar la libreria del paquete:
 
 ``` r
 library(meteorologia2.0)
 ```
+
+## Ejemplo uso de las funciones:
+
+### Ejemplo de uso funcion `fahrenheit_a_centigrados`
+
+``` r
+fahrenheit_a_centigrados(50)
+#> [1] 10
+```
+
+### Contribuciones al paquete
+
+### Codigo de contribucion
