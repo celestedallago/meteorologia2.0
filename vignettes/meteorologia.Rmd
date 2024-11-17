@@ -14,9 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-library(meteorologia2.0)
-```
 
 ## Uso del paquete
 
@@ -37,4 +34,11 @@ library(meteorologia2.0)
 
 SEGUNDO PASO: Descarga el/los dataset que desea usar. Este paso se realiza llamando a la funcion `descargar_datos()` a la cual de parametro le asignaras el id del dataset seleccionado 
 
+
+```{r}
+estacion_elegida <- descargar_datos("NH0910")
+head(estacion_elegida, 6)
+```
+
+TERCER PASO: Luego de descargar el dataset ya podras hacer uso de las sigueintes funciones: 
 
