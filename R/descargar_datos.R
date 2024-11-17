@@ -1,3 +1,24 @@
+#' Descargar datos
+#'
+#'
+#'
+#' Algunas de las estaciones disponibles para descargar son:
+#' * NH0910
+#' * NH0437
+#' * NH0046
+#' * NH0472
+#' * NH0098
+#'
+#' @param id_estacion es una identificacion confomado por dos letras mayusculas y cuatro numeros
+#'
+#' @return
+#' Nos devuelve el dateset del id ingresado
+#'
+#'
+#' @examples
+#' data <- descargar datos ("NH0910")
+#'
+#' @export
 descargar_datos <- function(id_estacion) {
   estacion_url <- paste0("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/", id_estacion, ".csv")
   ruta <- paste0(tempdir(), "/", id_estacion, ".csv")

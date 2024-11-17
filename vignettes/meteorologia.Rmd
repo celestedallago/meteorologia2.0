@@ -1,0 +1,40 @@
+---
+title: "meteorologia"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{meteorologia}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(meteorologia2.0)
+```
+
+## Uso del paquete
+
+Siga esta guia de pasos para poder usar el paquete `meteorologia2.0`de una forma util y practica
+
+
+
+
+PRIMER PASO: Importar la libreria del paquete `meteorologia2.0` de la siguiente forma 
+
+```{r}
+library(meteorologia2.0)
+
+```
+
+
+
+
+SEGUNDO PASO: Descarga el/los dataset que desea usar. Este paso se realiza llamando a la funcion `descargar_datos()` a la cual de parametro le asignaras el id del dataset seleccionado 
+
+
