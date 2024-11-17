@@ -5,10 +5,17 @@ Authors@R:
     person("Celeste", "Dal Lago", , "celedallago@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Este paquete es un paquete de prueba. En el cual voy a trabajar con distintos datos, para analizarlos. No instalar 
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-URL: https://github.com/celestedallago/meteorologia2.0
+URL: https://github.com/celestedallago/meteorologia2.0, https://celestedallago.github.io/meteorologia2.0/
 BugReports: https://github.com/celestedallago/meteorologia2.0/issues
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Imports: 
+    dplyr
+Config/testthat/edition: 3
