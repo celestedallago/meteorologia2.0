@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   meteorologia: meteorologia.html
-last_built: 2024-11-17T20:59Z
+last_built: 2024-11-18T01:53Z
 urls:
   reference: https://celestedallago.github.io/meteorologia2.0/reference
   article: https://celestedallago.github.io/meteorologia2.0/articles

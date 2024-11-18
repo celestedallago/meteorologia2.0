@@ -64,8 +64,6 @@
 
     
     
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/celestedallago/meteorologia2.0" class="external-link">meteorologia2.0</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level2">
 <h2 id="uso-del-paquete">Uso del paquete<a class="anchor" aria-label="anchor" href="#uso-del-paquete"></a>
 </h2>
@@ -73,11 +71,95 @@
 <code>meteorologia2.0</code>de una forma util y practica</p>
 <p>PRIMER PASO: Importar la libreria del paquete
 <code>meteorologia2.0</code> de la siguiente forma</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/celestedallago/meteorologia2.0" class="external-link">meteorologia2.0</a></span><span class="op">)</span></span></code></pre></div>
 <p>SEGUNDO PASO: Descarga el/los dataset que desea usar. Este paso se
-realiza llamando a la funcion <code>descargar_datos()</code> a la cual
+realiza llamando a la funcion <code><a href="../reference/descargar_datos.html">descargar_datos()</a></code> a la cual
 de parametro le asignaras el id del dataset seleccionado</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">estacion_elegida</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/descargar_datos.html">descargar_datos</a></span><span class="op">(</span><span class="st">"NH0910"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Descargando y leyendo el archivo de estacion 'NH0910' en el directorio</span></span>
+<span><span class="co">#&gt; temporal.</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">estacion_elegida</span>, <span class="fl">6</span><span class="op">)</span></span>
+<span><span class="co">#&gt;       id      fecha temperatura_abrigo_150cm temperatura_abrigo_150cm_maxima</span></span>
+<span><span class="co">#&gt; 1 NH0910 1975-01-01                    21.00                            31.0</span></span>
+<span><span class="co">#&gt; 2 NH0910 1975-01-02                    21.25                            28.5</span></span>
+<span><span class="co">#&gt; 3 NH0910 1975-01-03                    24.25                            32.5</span></span>
+<span><span class="co">#&gt; 4 NH0910 1975-01-04                    23.50                            31.0</span></span>
+<span><span class="co">#&gt; 5 NH0910 1975-01-05                    19.00                            22.0</span></span>
+<span><span class="co">#&gt; 6 NH0910 1975-01-06                    22.25                            27.5</span></span>
+<span><span class="co">#&gt;   temperatura_abrigo_150cm_minima temperatura_intemperie_5cm_minima</span></span>
+<span><span class="co">#&gt; 1                              11                                NA</span></span>
+<span><span class="co">#&gt; 2                              14                                NA</span></span>
+<span><span class="co">#&gt; 3                              16                                NA</span></span>
+<span><span class="co">#&gt; 4                              16                                NA</span></span>
+<span><span class="co">#&gt; 5                              16                                NA</span></span>
+<span><span class="co">#&gt; 6                              17                                NA</span></span>
+<span><span class="co">#&gt;   temperatura_intemperie_50cm_minima temperatura_suelo_5cm_media</span></span>
+<span><span class="co">#&gt; 1                                 NA                          NA</span></span>
+<span><span class="co">#&gt; 2                                 NA                          NA</span></span>
+<span><span class="co">#&gt; 3                                 NA                          NA</span></span>
+<span><span class="co">#&gt; 4                                 NA                          NA</span></span>
+<span><span class="co">#&gt; 5                                 NA                          NA</span></span>
+<span><span class="co">#&gt; 6                                 NA                          NA</span></span>
+<span><span class="co">#&gt;   temperatura_suelo_10cm_media temperatura_inte_5cm</span></span>
+<span><span class="co">#&gt; 1                           NA                   NA</span></span>
+<span><span class="co">#&gt; 2                           NA                   NA</span></span>
+<span><span class="co">#&gt; 3                           NA                   NA</span></span>
+<span><span class="co">#&gt; 4                           NA                   NA</span></span>
+<span><span class="co">#&gt; 5                           NA                   NA</span></span>
+<span><span class="co">#&gt; 6                           NA                   NA</span></span>
+<span><span class="co">#&gt;   temperatura_intemperie_150cm_minima humedad_suelo precipitacion_pluviometrica</span></span>
+<span><span class="co">#&gt; 1                                  NA            NA                           0</span></span>
+<span><span class="co">#&gt; 2                                  NA            NA                           0</span></span>
+<span><span class="co">#&gt; 3                                  NA            NA                           0</span></span>
+<span><span class="co">#&gt; 4                                  NA            NA                           0</span></span>
+<span><span class="co">#&gt; 5                                  NA            NA                           7</span></span>
+<span><span class="co">#&gt; 6                                  NA            NA                           0</span></span>
+<span><span class="co">#&gt;   granizo nieve heliofania_efectiva heliofania_relativa tesion_vapor_media</span></span>
+<span><span class="co">#&gt; 1      NA    NA                  NA                  NA                 NA</span></span>
+<span><span class="co">#&gt; 2      NA    NA                  NA                  NA                 NA</span></span>
+<span><span class="co">#&gt; 3      NA    NA                  NA                  NA                 NA</span></span>
+<span><span class="co">#&gt; 4      NA    NA                  NA                  NA                 NA</span></span>
+<span><span class="co">#&gt; 5      NA    NA                  NA                  NA                 NA</span></span>
+<span><span class="co">#&gt; 6      NA    NA                  NA                  NA                 NA</span></span>
+<span><span class="co">#&gt;   humedad_media humedad_media_8_14_20 rocio_medio duracion_follaje_mojado</span></span>
+<span><span class="co">#&gt; 1            NA                    NA          NA                      NA</span></span>
+<span><span class="co">#&gt; 2            NA                    NA          NA                      NA</span></span>
+<span><span class="co">#&gt; 3            NA                    NA          NA                      NA</span></span>
+<span><span class="co">#&gt; 4            NA                    NA          NA                      NA</span></span>
+<span><span class="co">#&gt; 5            NA                    NA          NA                      NA</span></span>
+<span><span class="co">#&gt; 6            NA                    NA          NA                      NA</span></span>
+<span><span class="co">#&gt;   velocidad_viento_200cm_media direccion_viento_200cm</span></span>
+<span><span class="co">#&gt; 1                           NA                     NA</span></span>
+<span><span class="co">#&gt; 2                           NA                     NA</span></span>
+<span><span class="co">#&gt; 3                           NA                     NA</span></span>
+<span><span class="co">#&gt; 4                           NA                     NA</span></span>
+<span><span class="co">#&gt; 5                           NA                     NA</span></span>
+<span><span class="co">#&gt; 6                           NA                     NA</span></span>
+<span><span class="co">#&gt;   velocidad_viento_1000cm_media direccion_viento_1000cm velocidad_viento_maxima</span></span>
+<span><span class="co">#&gt; 1                            NA                      NA                      NA</span></span>
+<span><span class="co">#&gt; 2                            NA                      NA                      NA</span></span>
+<span><span class="co">#&gt; 3                            NA                      NA                      NA</span></span>
+<span><span class="co">#&gt; 4                            NA                      NA                      NA</span></span>
+<span><span class="co">#&gt; 5                            NA                      NA                      NA</span></span>
+<span><span class="co">#&gt; 6                            NA                      NA                      NA</span></span>
+<span><span class="co">#&gt;   presion_media radiacion_global radiacion_neta evaporacion_tanque</span></span>
+<span><span class="co">#&gt; 1            NA               NA             NA                 NA</span></span>
+<span><span class="co">#&gt; 2            NA               NA             NA                 NA</span></span>
+<span><span class="co">#&gt; 3            NA               NA             NA                 NA</span></span>
+<span><span class="co">#&gt; 4            NA               NA             NA                 NA</span></span>
+<span><span class="co">#&gt; 5            NA               NA             NA                 NA</span></span>
+<span><span class="co">#&gt; 6            NA               NA             NA                 NA</span></span>
+<span><span class="co">#&gt;   evapotranspiracion_potencial profundidad_napa horas_frio unidad_frio</span></span>
+<span><span class="co">#&gt; 1                           NA               NA          0          NA</span></span>
+<span><span class="co">#&gt; 2                           NA               NA          0          NA</span></span>
+<span><span class="co">#&gt; 3                           NA               NA          0          NA</span></span>
+<span><span class="co">#&gt; 4                           NA               NA          0          NA</span></span>
+<span><span class="co">#&gt; 5                           NA               NA          0          NA</span></span>
+<span><span class="co">#&gt; 6                           NA               NA          0          NA</span></span></code></pre></div>
+<p>TERCER PASO: Luego de descargar el dataset ya podras hacer uso de las
+sigueintes funciones:</p>
 </div>
   </main>
 </div>
