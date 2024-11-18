@@ -1,13 +1,12 @@
 #' Descargar datos
 #'
 #'
-#'
 #' Algunas de las estaciones disponibles para descargar son:
-#' * NH0910
-#' * NH0437
-#' * NH0046
-#' * NH0472
-#' * NH0098
+#' -NH0910
+#' -NH0437
+#' -NH0046
+#' -NH0472
+#' -NH0098
 #'
 #' @param id_estacion es una identificacion confomado por dos letras mayusculas y cuatro numeros
 #'
