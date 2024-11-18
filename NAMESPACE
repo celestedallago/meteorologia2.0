@@ -2,3 +2,4 @@
 
 export(descargar_datos)
 export(fahrenheit_a_centigrados)
+export(resumen_precipitaciones_fecha)

@@ -54,6 +54,8 @@ fahrenheit_a_centigrados(50)
 #> [1] 10
 ```
 
+### Ejemplo de uso funcion `grafica_precipitacion`
+
 ### Contribuciones al paquete
 
 ### Codigo de contribucion
