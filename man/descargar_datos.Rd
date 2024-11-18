@@ -21,6 +21,6 @@ Algunas de las estaciones disponibles para descargar son:
 -NH0098
 }
 \examples{
-data <- descargar datos ("NH0910")
+data <- descargar_datos ("NH0910")
 
 }
