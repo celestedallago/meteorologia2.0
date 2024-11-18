@@ -48,9 +48,8 @@ Los dataset disponibles son:
 
 
 ## Funciones
-1) **`fahrenheit_a_centigrados`**: Esta funcion devuelve la temperatura ingresada en grados fahrenheit a grados centigrados 
-
-
+1) **`fahrenheit_a_centigrados`**: Esta funcion devuelve la temperatura ingresada en grados fahrenheit a grados centigrados¿p   1 
+2) **`grafica_precipitacion`**: Esta funcion devuelve una grafica mostrando la cantidad de mm que llovio por dia 
 
 ## Ejemplo
 
@@ -69,7 +68,12 @@ library(meteorologia2.0)
 ```{r}
 fahrenheit_a_centigrados(50)
 ```
-### Ejemplo de uso funcion `grafica_precipitacion`
+
+
+### Ejemplo de uso funcion 
+
+
+
 
 
 

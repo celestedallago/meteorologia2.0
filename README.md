@@ -35,7 +35,9 @@ estaciones meteorologicas deberas seguir los siguientes pasos:
 ## Funciones
 
 1)  **`fahrenheit_a_centigrados`**: Esta funcion devuelve la temperatura
-    ingresada en grados fahrenheit a grados centigrados
+    ingresada en grados fahrenheit a grados centigrados¿p 1
+2)  **`grafica_precipitacion`**: Esta funcion devuelve una grafica
+    mostrando la cantidad de mm que llovio por dia
 
 ## Ejemplo
 
@@ -54,7 +56,7 @@ fahrenheit_a_centigrados(50)
 #> [1] 10
 ```
 
-### Ejemplo de uso funcion `grafica_precipitacion`
+### Ejemplo de uso funcion
 
 ### Contribuciones al paquete
 
