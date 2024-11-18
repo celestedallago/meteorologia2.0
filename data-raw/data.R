@@ -11,6 +11,11 @@ url3 <- "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/N
 NH0437 <- read.csv(url3)
 head(NH0437)
 
-url4 <- " https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0098.csv"
-NH0098 <- read.csv(url4)
+url_nh0098 <- "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0098.csv"
+NH0098 <- read.csv(url_nh0098)
 head(NH0098)
+
+
+url_nh0046 <- "https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/NH0046.csv"
+NH0046 <- read.csv(url_nh0046)
+head(NH0046)
