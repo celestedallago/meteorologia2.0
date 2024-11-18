@@ -13,17 +13,12 @@ descargar_datos(id_estacion)
 Nos devuelve el dateset del id ingresado
 }
 \description{
-Descargar datos
-}
-\details{
 Algunas de las estaciones disponibles para descargar son:
-\itemize{
-\item NH0910
-\item NH0437
-\item NH0046
-\item NH0472
-\item NH0098
-}
+-NH0910
+-NH0437
+-NH0046
+-NH0472
+-NH0098
 }
 \examples{
 data <- descargar datos ("NH0910")
