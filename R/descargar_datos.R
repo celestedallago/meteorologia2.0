@@ -15,7 +15,7 @@
 #'
 #'
 #' @examples
-#' data <- descargar datos ("NH0910")
+#' data <- descargar_datos ("NH0910")
 #'
 #' @export
 descargar_datos <- function(id_estacion) {
