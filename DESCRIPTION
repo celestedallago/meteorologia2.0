@@ -13,8 +13,10 @@ URL: https://github.com/celestedallago/meteorologia2.0, https://celestedallago.g
 BugReports: https://github.com/celestedallago/meteorologia2.0/issues
 Suggests: 
     knitr,
+    mockery,
     rmarkdown,
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    withr
 VignetteBuilder: knitr
 Imports: 
     cli
