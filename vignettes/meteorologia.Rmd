@@ -40,5 +40,7 @@ estacion_elegida <- descargar_datos("NH0910")
 head(estacion_elegida, 6)
 ```
 
-TERCER PASO: Luego de descargar el dataset ya podras hacer uso de las sigueintes funciones:
+TERCER PASO: Ya podras tener acceso al dataset elejido, para poder visualizarlo.
+
+
 

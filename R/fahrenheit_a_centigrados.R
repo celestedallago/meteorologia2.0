@@ -15,15 +15,12 @@
 #'
 #'
 fahrenheit_a_centigrados <- function(fahrenheit) {
-
-
   if (!is.numeric(fahrenheit)) {
-    cli::cli_abort(c(
-      "El argumento fahrenheit debe ser numerico.",
-      "i" = "La variable ingresada es un {class(fahrenheit)[1]}"
-    ))
+    cli::cli_abort("El argumento fahrenheit debe ser numerico.")
   }
-
 
   (fahrenheit - 32) * 5 / 9
 }
+
+
+
