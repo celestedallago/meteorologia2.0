@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Celeste", "Dal Lago", , "celedallago@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Paquete para descargas datos meteorologicos y convertir temperaturas
+Description: Este paquete proporciona herramientas para analizar datos meteorológicos. Incluye funciones para procesar datos de temperatura y además de varias capacidades de visualización.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
