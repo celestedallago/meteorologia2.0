@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Celeste", "Dal Lago", , "celedallago@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Este paquete es un paquete de prueba. En el cual voy a trabajar con distintos datos, para analizarlos. No instalar 
+Description: Paquete para descargas datos meteorologicos y convertir temperaturas
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
