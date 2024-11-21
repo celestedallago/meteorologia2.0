@@ -7,6 +7,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/celestedallago/meteorologia2.0/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/celestedallago/meteorologia2.0/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 El objetivo de meteorologia2.0 es poder analizar y manipular datos
@@ -35,9 +36,9 @@ estaciones meteorologicas deberas seguir los siguientes pasos:
 ## Funciones
 
 1)  **`fahrenheit_a_centigrados`**: Esta funcion devuelve la temperatura
-    ingresada en grados fahrenheit a grados centigrados¿p 1
-2)  **`grafica_precipitacion`**: Esta funcion devuelve una grafica
-    mostrando la cantidad de mm que llovio por dia
+    ingresada en grados fahrenheit a grados centigrados
+2)  **`centigrados_a_fahrenheit`**: Esta funcion devuelve la temperatura
+    ingresa en grados centigrados a grados fahrenheit
 
 ## Ejemplo
 
@@ -56,8 +57,29 @@ fahrenheit_a_centigrados(50)
 #> [1] 10
 ```
 
-### Ejemplo de uso funcion
+### Ejemplo de uso funcion `centigrados_a_fahrenheit`
+
+``` r
+centigrados_a_fahrenheit(25)
+#> [1] 77
+```
 
 ### Contribuciones al paquete
+
+Si deseas contribuir al paquete, ya sea para mejorar funcionalidades,
+corregir errores o proponer nuevas características, sigue estos pasos:
+
+Haz un fork y clona el repositorio: Realiza un fork de este repositorio
+en tu cuenta de GitHub y luego clónalo en tu máquina local.
+
+Haz tus modificaciones y crea un pull request: Realiza los cambios que
+consideres necesarios en tu copia del repositorio. Luego, abre un pull
+request hacia la rama principal del proyecto, asegurándote de incluir
+una descripción clara sobre el propósito de tu contribución.
+
+Si tienes alguna duda o necesitas asistencia durante el proceso de
+contribución, no dudes en contactarme:
+
+Celeste Dal Lago / <celedallago@gmail.com>
 
 ### Codigo de contribucion
