@@ -13,8 +13,9 @@
 #'
 centigrados_a_fahrenheit <- function(centigrados) {
   if (!is.numeric(centigrados)) {
-    stop("El argumento centigrados debe ser numérico.")
+    stop("El argumento centigrados debe ser numerico.")
   }
+
 
   fahrenheit <- (centigrados * 9/5) + 32
   return(fahrenheit)
