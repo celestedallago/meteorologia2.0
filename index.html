@@ -11,8 +11,8 @@
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Paquete Meteorologico">
-<meta name="description" content="Este paquete es un paquete de prueba. En el cual voy a trabajar con distintos datos, para analizarlos. No instalar">
-<meta property="og:description" content="Este paquete es un paquete de prueba. En el cual voy a trabajar con distintos datos, para analizarlos. No instalar">
+<meta name="description" content="Este paquete proporciona herramientas para analizar datos meteorológicos. Incluye funciones para procesar datos de temperatura y además de varias capacidades de visualización.">
+<meta property="og:description" content="Este paquete proporciona herramientas para analizar datos meteorológicos. Incluye funciones para procesar datos de temperatura y además de varias capacidades de visualización.">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -80,9 +80,9 @@
 </h2>
 <ol style="list-style-type: decimal">
 <li>
-<strong><code>fahrenheit_a_centigrados</code></strong>: Esta funcion devuelve la temperatura ingresada en grados fahrenheit a grados centigrados¿p 1</li>
+<strong><code>fahrenheit_a_centigrados</code></strong>: Esta funcion devuelve la temperatura ingresada en grados fahrenheit a grados centigrados</li>
 <li>
-<strong><code>grafica_precipitacion</code></strong>: Esta funcion devuelve una grafica mostrando la cantidad de mm que llovio por dia</li>
+<strong><code>centigrados_a_fahrenheit</code></strong>: Esta funcion devuelve la temperatura ingresa en grados centigrados a grados fahrenheit</li>
 </ol>
 </div>
 <div class="section level2">
@@ -104,12 +104,21 @@
 <span><span class="co">#&gt; [1] 10</span></span></code></pre></div>
 </div>
 <div class="section level3">
-<h3 id="ejemplo-de-uso-funcion">Ejemplo de uso funcion<a class="anchor" aria-label="anchor" href="#ejemplo-de-uso-funcion"></a>
+<h3 id="ejemplo-de-uso-funcion-centigrados_a_fahrenheit">Ejemplo de uso funcion <code>centigrados_a_fahrenheit</code>
+<a class="anchor" aria-label="anchor" href="#ejemplo-de-uso-funcion-centigrados_a_fahrenheit"></a>
 </h3>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/centigrados_a_fahrenheit.html">centigrados_a_fahrenheit</a></span><span class="op">(</span><span class="fl">25</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] 77</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="contribuciones-al-paquete">Contribuciones al paquete<a class="anchor" aria-label="anchor" href="#contribuciones-al-paquete"></a>
 </h3>
+<p>Si deseas contribuir al paquete, ya sea para mejorar funcionalidades, corregir errores o proponer nuevas características, sigue estos pasos:</p>
+<p>Haz un fork y clona el repositorio: Realiza un fork de este repositorio en tu cuenta de GitHub y luego clónalo en tu máquina local.</p>
+<p>Haz tus modificaciones y crea un pull request: Realiza los cambios que consideres necesarios en tu copia del repositorio. Luego, abre un pull request hacia la rama principal del proyecto, asegurándote de incluir una descripción clara sobre el propósito de tu contribución.</p>
+<p>Si tienes alguna duda o necesitas asistencia durante el proceso de contribución, no dudes en contactarme:</p>
+<p>Celeste Dal Lago / <a href="mailto:celedallago@gmail.com" class="email">celedallago@gmail.com</a></p>
 </div>
 <div class="section level3">
 <h3 id="codigo-de-contribucion">Codigo de contribucion<a class="anchor" aria-label="anchor" href="#codigo-de-contribucion"></a>
@@ -159,6 +168,7 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="https://github.com/celestedallago/meteorologia2.0/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/celestedallago/meteorologia2.0/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>
 
