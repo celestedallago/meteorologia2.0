@@ -83,6 +83,8 @@
 <strong><code>fahrenheit_a_centigrados</code></strong>: Esta funcion devuelve la temperatura ingresada en grados fahrenheit a grados centigrados</li>
 <li>
 <strong><code>centigrados_a_fahrenheit</code></strong>: Esta funcion devuelve la temperatura ingresa en grados centigrados a grados fahrenheit</li>
+<li>
+<strong><code>grafico_temperatura_mensual</code></strong>: Esta funcion recibe un data frame con datos de una o mas estaciones y agrupa los datos por mes y calcula el promedio de la temperatura para cada mes, lo que permite observar tendencias y variaciones a lo largo del año. Luego, genera un grafico que muestra estos promedios mensuales, con el eje x representando los meses y el eje y la temperatura promedio en grados Celsius.</li>
 </ol>
 </div>
 <div class="section level2">
@@ -111,6 +113,14 @@
 <code class="sourceCode R"><span><span class="fu"><a href="reference/centigrados_a_fahrenheit.html">centigrados_a_fahrenheit</a></span><span class="op">(</span><span class="fl">25</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 77</span></span></code></pre></div>
 </div>
+</div>
+<div class="section level2">
+<h2 id="ejemplo-del-uso-funcion">Ejemplo del uso funcion<a class="anchor" aria-label="anchor" href="#ejemplo-del-uso-funcion"></a>
+</h2>
+<p><code>grafico_temperatura_mensual</code></p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/grafico_temperatura_mensual.html">grafico_temperatura_mensual</a></span><span class="op">(</span><span class="va">NH0910</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-4-1.png" width="100%"></p>
 <div class="section level3">
 <h3 id="contribuciones-al-paquete">Contribuciones al paquete<a class="anchor" aria-label="anchor" href="#contribuciones-al-paquete"></a>
 </h3>
