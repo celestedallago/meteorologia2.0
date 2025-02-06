@@ -3,3 +3,4 @@
 export(centigrados_a_fahrenheit)
 export(descargar_datos)
 export(fahrenheit_a_centigrados)
+export(grafico_temperatura_mensual)

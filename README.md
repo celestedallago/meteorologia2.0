@@ -39,6 +39,13 @@ estaciones meteorologicas deberas seguir los siguientes pasos:
     ingresada en grados fahrenheit a grados centigrados
 2)  **`centigrados_a_fahrenheit`**: Esta funcion devuelve la temperatura
     ingresa en grados centigrados a grados fahrenheit
+3)  **`grafico_temperatura_mensual`**: Esta funcion recibe un data frame
+    con datos de una o mas estaciones y agrupa los datos por mes y
+    calcula el promedio de la temperatura para cada mes, lo que permite
+    observar tendencias y variaciones a lo largo del año. Luego, genera
+    un grafico que muestra estos promedios mensuales, con el eje x
+    representando los meses y el eje y la temperatura promedio en grados
+    Celsius.
 
 ## Ejemplo
 
@@ -63,6 +70,16 @@ fahrenheit_a_centigrados(50)
 centigrados_a_fahrenheit(25)
 #> [1] 77
 ```
+
+## Ejemplo del uso funcion
+
+`grafico_temperatura_mensual`
+
+``` r
+grafico_temperatura_mensual(NH0910)
+```
+
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 ### Contribuciones al paquete
 
