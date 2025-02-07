@@ -20,6 +20,7 @@ Suggests:
 VignetteBuilder: knitr
 Imports: 
     cli,
+    dplyr,
     ggplot2
 Config/testthat/edition: 3
 Depends: 
